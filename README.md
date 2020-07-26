@@ -1,6 +1,4 @@
 # CommonRegexABAP
-CommonRegex port for ABAP
-
 [CommonRegex](https://github.com/madisonmay/CommonRegex/ "CommonRegex") port for ABAP
 
 Find a lot of kinds of common information in a string.
