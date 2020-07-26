@@ -12,18 +12,26 @@ Please note that this is currently English/US specific.
 Install this repository using [abapGit](https://github.com/larshp/abapGit#abapgit).
 
 ### API
+Create an instance of class ZCL_COMMONREGEX and call one of the public methods:
+* `get_dates()`
+* `get_times()`
+* `get_phones()`
+* `get_links()`
+* `get_emails()`
+* `get_ipv4()`
+* `get_ipv6()` (currently in progress)
+* `get_hex_colors()`
+* `get_acronyms()`
+* `get_money()`
+* `get_percentages()` 
+* `get_credit_cards()` (currently in progress)
+* `get_addresses()`
 
-Instance methods will return the results relative to the text passed at the constructor:
-* `get_dates(text)`
-* `get_times(text)`
-* `get_phones(text)`
-* `get_links(text)`
-* `get_emails(text)`
-* `get_ipv4(text)`
-* `get_ipv6(text)` (currently in progress)
-* `get_hex_colors(text)`
-* `get_acronyms(text)`
-* `get_money(text)`
-* `get_percentages(text)` 
-* `get_credit_cards(text)` (currently in progress)
-* `get_addresses(text)`
+```abap
+    DATA: l_text type string.
+    ...
+    mo_cut = NEW #( l_text ).
+
+    DATA(lt_data) = mo_cut->get_dates().
+
+```
