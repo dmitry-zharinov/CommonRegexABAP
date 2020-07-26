@@ -45,10 +45,7 @@ CLASS zcl_commonregex IMPLEMENTATION.
 
 
   METHOD constructor.
-    ##TODO
-    " делать замены
     m_text = i_text.
-
   ENDMETHOD.
 
 
